@@ -14,6 +14,9 @@ export class HeroComponent {
   }
 
   downloadResume() {
-    window.open('https://drive.google.com/file/d/1-pfnAlP4Hx_ehgceCS-J2oP2dNtsr9sc/view?usp=drive_link', '_blank');
+    const link = document.createElement('a');
+    link.href = 'assets/Gokul_Resume.pdf';
+    link.download = 'Gokul_Resume.pdf';
+    link.click();
   }
 }
