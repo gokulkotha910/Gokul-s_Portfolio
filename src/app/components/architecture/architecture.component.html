@@ -1,0 +1,72 @@
+<div class="py-24 max-w-7xl mx-auto w-full">
+  <div class="mb-20 text-center">
+    <h2 class="text-[52px] font-bold tracking-tight mb-4">Application Architecture</h2>
+    <p class="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">A modern, reactive enterprise application data flow powered by Angular, NgRx, and RxJS.</p>
+  </div>
+
+  <div class="glass-card p-8 md:p-16 relative overflow-hidden bg-dark-surface/40 border-white/5">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-dark-bg/50 to-dark-bg"></div>
+
+    <div class="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between max-w-5xl mx-auto">
+      
+      <!-- UI Layer -->
+      <div class="flex flex-col gap-6 w-full md:w-1/3" data-aos="fade-right" data-aos-duration="1000">
+        <div class="glass-card p-6 text-center border-blue-500/30 hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] transition-all bg-blue-500/5 relative group">
+          <div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-[2px] bg-blue-500/50 hidden md:block group-hover:bg-blue-400 transition-colors"></div>
+          <div class="text-blue-400 font-bold mb-2 text-lg">UI Layer</div>
+          <div class="text-sm text-text-secondary">Angular Components</div>
+        </div>
+        <div class="flex justify-center text-blue-500/50 md:hidden">
+          <svg class="w-6 h-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+        <div class="glass-card p-6 text-center border-purple-500/30 hover:border-purple-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] transition-all bg-purple-500/5 relative group">
+          <div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-[2px] bg-purple-500/50 hidden md:block group-hover:bg-purple-400 transition-colors"></div>
+          <div class="text-purple-400 font-bold mb-2 text-lg">NgRx Actions</div>
+          <div class="text-sm text-text-secondary">Dispatch Events</div>
+        </div>
+      </div>
+
+      <!-- State & Logic -->
+      <div class="flex flex-col gap-6 border border-white/10 rounded-3xl p-8 bg-white/5 relative w-full md:w-1/3 shadow-inner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-dark-bg px-4 text-xs font-bold text-white/40 tracking-[0.2em]">STATE STORE</div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card p-4 text-center border-pink-500/30 bg-pink-500/10 hover:border-pink-500 transition-colors">
+            <div class="text-pink-400 font-bold text-sm">Reducers</div>
+          </div>
+          <div class="glass-card p-4 text-center border-indigo-500/30 bg-indigo-500/10 hover:border-indigo-500 transition-colors">
+            <div class="text-indigo-400 font-bold text-sm">Effects</div>
+          </div>
+        </div>
+
+        <div class="flex justify-center py-4">
+          <div class="w-12 h-12 rounded-full border-2 border-dashed border-cyan-500/30 flex items-center justify-center animate-[spin_4s_linear_infinite]">
+            <div class="w-8 h-8 rounded-full border border-cyan-500/50"></div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 text-center border-cyan-500/30 bg-cyan-500/10 hover:border-cyan-500 transition-colors relative group">
+          <div class="absolute -right-11 top-1/2 -translate-y-1/2 w-11 h-[2px] bg-cyan-500/50 hidden md:block group-hover:bg-cyan-400 transition-colors"></div>
+          <div class="text-cyan-400 font-bold mb-2 text-lg">RxJS Streams</div>
+          <div class="text-sm text-text-secondary">Reactive Data Flow</div>
+        </div>
+      </div>
+
+      <!-- Infrastructure -->
+      <div class="flex flex-col gap-6 w-full md:w-1/3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+        <div class="glass-card p-6 text-center border-emerald-500/30 hover:border-emerald-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] transition-all bg-emerald-500/5">
+          <div class="text-emerald-400 font-bold mb-2 text-lg">API Services</div>
+          <div class="text-sm text-text-secondary">REST / Interceptors</div>
+        </div>
+        <div class="flex justify-center text-emerald-500/50 md:hidden">
+          <svg class="w-6 h-6 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+        </div>
+        <div class="glass-card p-6 text-center border-orange-500/30 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.2)] transition-all bg-orange-500/5">
+          <div class="text-orange-400 font-bold mb-2 text-lg">Backend</div>
+          <div class="text-sm text-text-secondary">MongoDB / SQL Server</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

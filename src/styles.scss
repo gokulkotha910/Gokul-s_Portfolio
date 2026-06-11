@@ -1,0 +1,140 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Import Bootstrap Grid ONLY (No overriding visual styles) */
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
+/* Import Material Theme */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Import AOS Styles */
+@import 'aos/dist/aos.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Light Mode Colors */
+  --color-white: 0 0 0; /* White classes become Black */
+  --color-black: 255 255 255; /* Black classes become White */
+  --color-bg: 250 250 250; /* #FAFAFA */
+  --color-surface: 255 255 255; /* #FFFFFF */
+  --text-primary: 17 17 19; /* #111113 */
+  --text-secondary: 82 82 91; /* #52525B */
+  
+  --bg-color: rgb(var(--color-bg));
+  --surface-color: rgb(var(--color-surface));
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --color-white: 255 255 255;
+  --color-black: 0 0 0;
+  --color-bg: 9 9 11; /* #09090B */
+  --color-surface: 17 17 19; /* #111113 */
+  --text-primary: 250 250 250; /* #FAFAFA */
+  --text-secondary: 161 161 170; /* #A1A1AA */
+  
+  --bg-color: rgb(var(--color-bg));
+  --surface-color: rgb(var(--color-surface));
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: "Inter", "Geist", "SF Pro Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities for Premium Glass UI */
+.glass-card {
+  background: rgb(var(--color-white) / 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgb(var(--color-white) / 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.05);
+}
+
+.glass-nav {
+  background: rgb(var(--color-white) / 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgb(var(--color-white) / 0.08);
+  border-radius: 9999px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 0.05);
+}
+
+.shadow-glass {
+  box-shadow: 0 8px 32px rgb(var(--color-white) / 0.05);
+}
+
+.shadow-glass-hover {
+  box-shadow: 0 12px 48px rgb(var(--color-white) / 0.1);
+}
+
+/* Ambient Floating Orbs Animation */
+@keyframes blob-float {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob-float 20s infinite alternate ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Typography Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #3B82F6 0%, #6366F1 35%, #8B5CF6 70%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Material Override */
+.mat-mdc-card, .mdc-card {
+  background: rgb(var(--color-white) / 0.04) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid rgb(var(--color-white) / 0.08) !important;
+  backdrop-filter: blur(20px);
+}
+
+.mat-mdc-button:not(:disabled) {
+  color: var(--text-primary) !important;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  background: linear-gradient(135deg, #3B82F6 0%, #6366F1 35%, #8B5CF6 70%, #06B6D4 100%) !important;
+  color: #FAFAFA !important;
+  border-radius: 999px !important;
+}
+
+/* Custom Dialog Backdrop and Panel */
+.blur-backdrop {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.glass-modal-panel {
+  .mat-mdc-dialog-container, .mdc-dialog__surface {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 24px !important;
+    padding: 0 !important;
+  }
+}

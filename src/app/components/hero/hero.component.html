@@ -1,0 +1,77 @@
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[90vh] w-full pt-12">
+  <div class="flex flex-col space-y-8 relative z-10" data-aos="fade-right">
+    <div>
+      <h1
+        class="text-[36px] md:text-[48px] lg:text-[56px] font-extrabold leading-[1] tracking-tighter mb-4 break-words text-white">
+        KOTHA VIGNESWARA<br />
+        <span>VENKATA PHANENDRA GOKUL</span>
+      </h1>
+      <h2 class="text-[20px] md:text-[24px] font-medium text-text-secondary mt-6" data-aos="fade-up"
+        data-aos-delay="100">
+        Angular Developer & Enterprise Frontend Engineer
+      </h2>
+    </div>
+
+    <p class="text-[18px] leading-[1.8] text-text-secondary max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+      Results-driven Software Developer with 4.5+ years of experience in designing and developing responsive web
+      applications using Angular, TypeScript, HTML, and CSS, along with building scalable enterprise platforms, GIS
+      solutions, and interactive dashboards.
+    </p>
+
+    <div class="flex flex-wrap gap-4 pt-4" data-aos="fade-up" data-aos-delay="300">
+      <button mat-raised-button color="primary"
+        class="!px-8 !py-6 !text-lg !font-medium shadow-glass transition-all hover:shadow-glass-hover hover:-translate-y-1"
+        (click)="scrollTo('projects')">
+        View Projects
+      </button>
+      <button class="glass-card px-8 py-3 rounded-full font-medium text-white hover:bg-white/10 transition-colors"
+        (click)="downloadResume()">
+        Download Resume
+      </button>
+      <button class="glass-card px-8 py-3 rounded-full font-medium text-white hover:bg-white/10 transition-colors"
+        (click)="scrollTo('contact')">
+        Contact Me
+      </button>
+    </div>
+  </div>
+
+  <div class="relative h-[400px] lg:h-[600px] w-full flex items-center justify-center lg:justify-end mt-12 lg:mt-0"
+    data-aos="fade-left" data-aos-duration="1200">
+    <!-- Background glow -->
+    <div
+      class="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-accent-gradient opacity-[0.15] blur-[100px] rounded-full">
+    </div>
+
+    <!-- Profile Photo Container -->
+    <div class="relative z-10 w-[280px] h-[280px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
+      <div
+        class="w-full h-full rounded-full p-2 bg-gradient-to-br from-blue-500/30 to-purple-500/30 backdrop-blur-sm border border-white/10 shadow-[0_0_50px_rgba(59,130,246,0.3)] animate-float">
+        <div
+          class="w-full h-full rounded-full overflow-hidden bg-dark-surface flex items-center justify-center relative group shadow-inner">
+
+          <!-- Profile Image (User can replace src) -->
+          <img src="assets/profile.JPG" alt="Profile Photo" class="w-full h-full object-cover relative z-10"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+
+          <!-- Fallback when image is missing -->
+          <div
+            class="absolute inset-0 hidden flex-col items-center justify-center text-text-secondary bg-white/5 border-2 border-dashed border-white/20 rounded-full z-0 group-hover:border-blue-500/50 group-hover:text-blue-400 transition-all"
+            title="Place your photo at src/assets/profile.JPG">
+            <mat-icon class="text-4xl mb-2 opacity-50">add_a_photo</mat-icon>
+            <span class="text-sm font-medium opacity-70 text-center px-4">Add Photo<br><span
+                class="text-xs font-mono mt-1 block">src/assets/profile.JPG</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-10 -left-6 w-12 h-12 rounded-full bg-blue-500/20 border border-blue-500/30 flex items-center justify-center backdrop-blur-md animate-float-delayed shadow-glass z-20">
+      </div>
+      <div
+        class="absolute bottom-10 -right-4 w-16 h-16 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center backdrop-blur-md animate-float shadow-glass z-20"
+        style="animation-delay: 1s;">
+      </div>
+    </div>
+  </div>
+</div>

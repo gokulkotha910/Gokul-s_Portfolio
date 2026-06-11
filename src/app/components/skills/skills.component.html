@@ -1,0 +1,40 @@
+<div class="py-24 max-w-7xl mx-auto w-full">
+  <div class="mb-20 text-center">
+    <h2 class="text-[52px] font-bold tracking-tight mb-4">Technical Arsenal</h2>
+    <p class="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">A comprehensive toolkit for building scalable enterprise applications.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div *ngFor="let category of skillCategories" class="glass-card p-8 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
+      <!-- Glow effect -->
+      <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-10 blur-2xl transition-opacity group-hover:opacity-30"
+           [ngClass]="{
+             'bg-red-500': category.color === 'red',
+             'bg-blue-500': category.color === 'blue',
+             'bg-emerald-500': category.color === 'emerald',
+             'bg-orange-500': category.color === 'orange',
+             'bg-slate-500': category.color === 'slate'
+           }"></div>
+
+      <h3 class="text-xl font-bold mb-6 text-white relative z-10 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10"
+             [ngClass]="{
+               'text-red-400': category.color === 'red',
+               'text-blue-400': category.color === 'blue',
+               'text-emerald-400': category.color === 'emerald',
+               'text-orange-400': category.color === 'orange',
+               'text-slate-400': category.color === 'slate'
+             }">
+             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        {{category.title}}
+      </h3>
+      
+      <div class="flex flex-wrap gap-3 relative z-10">
+        <div *ngFor="let skill of category.skills" class="px-4 py-2 bg-black/40 border border-white/5 rounded-lg text-sm font-medium text-text-secondary hover:text-white hover:border-white/20 transition-colors cursor-default">
+          {{skill}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="glass-card bg-dark-bg/95 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto w-full rounded-[24px]">
+  <!-- Close Button -->
+  <button (click)="close()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors z-50 text-white">
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <div class="p-8 md:p-12">
+    <div class="text-sm font-bold tracking-widest uppercase mb-4"
+         [ngClass]="{
+           'text-blue-500': data.color === 'blue',
+           'text-emerald-500': data.color === 'emerald',
+           'text-amber-500': data.color === 'amber',
+           'text-purple-500': data.color === 'purple',
+           'text-red-500': data.color === 'red'
+         }">{{data.type}}</div>
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white pr-12">{{data.name}}</h2>
+    
+    <div class="flex flex-wrap gap-2 mb-10 pb-8 border-b border-white/5">
+      <span *ngFor="let tech of data.techStack" class="px-3 py-1 bg-white/5 rounded-full text-sm font-medium border border-white/10 text-white cursor-default">
+        {{tech}}
+      </span>
+    </div>
+
+    <div class="space-y-10">
+      <section>
+        <h3 class="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+          <mat-icon class="text-blue-500">description</mat-icon> Overview
+        </h3>
+        <p class="text-text-secondary text-lg leading-relaxed">{{data.overview}}</p>
+      </section>
+
+      <section>
+        <h3 class="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+          <mat-icon class="text-orange-500">error_outline</mat-icon> Business Problem
+        </h3>
+        <p class="text-text-secondary leading-relaxed text-lg">
+          The enterprise required a robust, scalable system to replace legacy infrastructure while ensuring high security, real-time data flow, and 99.9% uptime. The challenge was maintaining a unified codebase while catering to diverse client requirements.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+          <mat-icon class="text-purple-500">architecture</mat-icon> Architecture & Solution
+        </h3>
+        <p class="text-text-secondary leading-relaxed text-lg">
+          Engineered a multi-tenant architecture using Angular 16 and NgRx for isolated, scalable state management. Built real-time reactive streams with RxJS to handle dynamic dashboard configurations and complex data visualizations.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="text-2xl font-bold mb-4 text-white flex items-center gap-3">
+          <mat-icon class="text-emerald-500">trending_up</mat-icon> Impact & Results
+        </h3>
+        <ul class="list-none space-y-4">
+          <li class="flex items-center gap-4 text-text-secondary text-lg bg-white/5 p-4 rounded-xl border border-white/5">
+            <mat-icon class="text-emerald-500 flex-shrink-0">check_circle</mat-icon> 
+            <span>Reduced load times by 40% through lazy loading and RxJS optimizations.</span>
+          </li>
+          <li class="flex items-center gap-4 text-text-secondary text-lg bg-white/5 p-4 rounded-xl border border-white/5">
+            <mat-icon class="text-emerald-500 flex-shrink-0">check_circle</mat-icon> 
+            <span>Centralized codebase saving 200+ developer hours per quarter.</span>
+          </li>
+          <li class="flex items-center gap-4 text-text-secondary text-lg bg-white/5 p-4 rounded-xl border border-white/5">
+            <mat-icon class="text-emerald-500 flex-shrink-0">check_circle</mat-icon> 
+            <span>Delivered 100% security compliance for enterprise banking standards.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
