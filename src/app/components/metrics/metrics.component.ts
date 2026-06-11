@@ -29,7 +29,7 @@ export class MetricsComponent implements OnInit, AfterViewInit {
   }
 
   animateCounters() {
-    this.animateValue('yearsExperience', 0, 4, 1500);
+    this.animateValue('yearsExperience', 0, 4.5, 1500);
     this.animateValue('enterpriseModules', 0, 20, 2000);
     this.animateValue('featuresDelivered', 0, 100, 2500);
     this.animateValue('industryDomains', 0, 5, 1500);
