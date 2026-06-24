@@ -1,0 +1,283 @@
+.architecture-section {
+    max-width: 1400px;
+}
+
+.section-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.title-line {
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,
+            #3b82f6,
+            #a855f7);
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.architecture-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    padding: 60px 40px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.architecture-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(ellipse at center,
+            rgba(59, 130, 246, 0.08),
+            rgba(15, 23, 42, 0.5),
+            rgba(15, 23, 42, 1));
+}
+
+.flow-card {
+    position: relative;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.flow-card:hover {
+    transform: translateY(-5px);
+}
+
+.flow-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.flow-card p {
+    color: #94a3b8;
+    margin: 0;
+}
+
+.blue-card {
+    background: rgba(59, 130, 246, 0.06);
+}
+
+.blue-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+}
+
+.purple-card {
+    background: rgba(168, 85, 247, 0.06);
+}
+
+.purple-card:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.2);
+}
+
+.green-card {
+    background: rgba(16, 185, 129, 0.06);
+}
+
+.green-card:hover {
+    border-color: #10b981;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+}
+
+.orange-card {
+    background: rgba(249, 115, 22, 0.06);
+}
+
+.orange-card:hover {
+    border-color: #f97316;
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.2);
+}
+
+.cyan-card {
+    background: rgba(6, 182, 212, 0.08);
+}
+
+.cyan-card:hover {
+    border-color: #06b6d4;
+}
+
+.store-container {
+    position: relative;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.store-label {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 5px 15px;
+
+    background: #111827;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.mini-card {
+    padding: 15px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    font-weight: 700;
+}
+
+.pink-card {
+    color: #ec4899;
+
+    background: rgba(236, 72, 153, 0.1);
+
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.indigo-card {
+    color: #818cf8;
+
+    background: rgba(99, 102, 241, 0.1);
+
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.store-loader {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.loader-ring {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 2px dashed rgba(6, 182, 212, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: spin 4s linear infinite;
+}
+
+.loader-inner {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(6, 182, 212, 0.7);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.connector-right {
+    position: absolute;
+
+    right: -25px;
+    top: 50%;
+
+    width: 25px;
+    height: 2px;
+
+    background: rgba(59, 130, 246, 0.5);
+}
+
+.connector-right-long {
+    position: absolute;
+
+    right: -45px;
+    top: 50%;
+
+    width: 45px;
+    height: 2px;
+
+    background: rgba(6, 182, 212, 0.5);
+}
+
+.blue-text {
+    color: #60a5fa;
+}
+
+.purple-text {
+    color: #c084fc;
+}
+
+.cyan-text {
+    color: #22d3ee;
+}
+
+.green-text {
+    color: #34d399;
+}
+
+.orange-text {
+    color: #fb923c;
+}
+
+.mobile-arrow {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    font-size: 22px;
+}

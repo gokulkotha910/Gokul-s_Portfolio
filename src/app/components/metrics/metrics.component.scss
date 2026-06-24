@@ -1,0 +1,88 @@
+.metrics-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    margin-left: -100px;
+    margin-right: -100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.metrics-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(59, 130, 246, 0.04),
+            rgba(168, 85, 247, 0.04));
+
+    filter: blur(100px);
+}
+
+.metric-item {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.metric-value {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.metric-label {
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.blue-plus {
+    color: #3b82f6;
+}
+
+.indigo-plus {
+    color: #6366f1;
+}
+
+.purple-plus {
+    color: #a855f7;
+}
+
+.cyan-plus {
+    color: #06b6d4;
+}
+
+@media (max-width: 991px) {
+
+    .metrics-section {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 80px 0;
+    }
+
+    .metric-value {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .metric-value {
+        font-size: 42px;
+    }
+
+    .metric-item {
+        margin-bottom: 30px;
+    }
+
+    .metric-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}

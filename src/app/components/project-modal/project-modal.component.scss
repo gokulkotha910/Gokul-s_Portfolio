@@ -1,0 +1,150 @@
+.project-modal {
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+.modal-content-wrapper {
+    padding: 40px 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-type {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.type-blue {
+    color: #3b82f6;
+}
+
+.type-green {
+    color: #10b981;
+}
+
+.type-amber {
+    color: #f59e0b;
+}
+
+.type-purple {
+    color: #a855f7;
+}
+
+.type-red {
+    color: #ef4444;
+}
+
+.project-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-badge {
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.text-purple {
+    color: #a855f7;
+}
+
+.impact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.impact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+.impact-card i {
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .modal-content-wrapper {
+        padding: 30px;
+    }
+
+    .project-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+}

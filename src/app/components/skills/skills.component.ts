@@ -17,7 +17,7 @@ export class SkillsComponent {
       title: 'Frontend Fundamentals',
       icon: 'code',
       color: 'blue',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Tailwind CSS']
+      skills: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap']
     },
     {
       title: 'Backend Integration',
